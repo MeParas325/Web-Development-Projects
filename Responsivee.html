@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        height: auto;
+        background: grey;
+    }
+    h1{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .pare{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .child{
+        flex: 1 1 300px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        box-shadow: 10px 10px 20px rgba(16, 116, 199, 0.5);
+        border-radius: 10px;
+    }
+    #child1{
+        background: red;
+    }
+    #child2{
+        background: skyblue;
+    }
+    #child3{
+        background: green;
+    }
+</style>
+<body>
+    <h1>Services</h1>
+    <div class="pare">
+        <div class="child" id="child1">Tannu</div>
+        <div class="child" id="child2">Paras</div>
+        <div class="child" id="child3">Riya</div>
+    </div>
+</body>
+</html>

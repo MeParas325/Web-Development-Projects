@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childd</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li{
+            margin: 30px;
+        }
+
+        li:nth-child(2n){
+            color: red;
+        }
+
+        li:nth-child(2n+1){
+            color:blue;
+        }
+
+        li:first-child{
+            color: white;
+        }
+
+        li:last-child{
+            color: purple;
+        }
+
+        li:not(:nth-child(5)){
+            color: white;
+        }
+     </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text pseudo</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+    }
+    .main_div{
+        background-color: rgb(0, 255, 200);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .child_div{
+        width: 60vw;
+        height: 60vh;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .para{
+        padding: 75px;
+        margin: 23px 34px;
+    }
+    .para::first-letter{
+        font-size: 34px;
+        color: blue;
+    }
+    .para::first-line{
+        color: yellow;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="main_div">
+        <div class="child_div">
+          <p class="para">
+            Paras verma also known as nothing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nisi reprehenderit impedit dicta quae? Ut quisquam dolores illo architecto nemo in ullam neque eligendi nobis debitis possimus assumenda laboriosam aut harum optio saepe autem reiciendis, rem accusamus officia consequuntur asperiores aspernatur dicta nesciunt! Sunt molestiae magnam natus corrupti aut. Nemo.
+          </p>    
+       </div>
+    </div>
+</body>
+</html>

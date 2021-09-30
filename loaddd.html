@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main{
+            width: 10rem;
+            height: 10rem;
+            /* background: red; */
+            position: relative;
+        }
+
+        span{
+            width: 3rem;
+            position: absolute;
+            height: 3rem;
+            background: black;
+            animation: loading 3s linear infinite;
+        }
+
+        @keyframes loading{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            12.5%{
+                top: 0;
+                left: 50%;
+            }
+            25%{
+                top: 0;
+                left: 50%;
+            }
+            37.5%{
+                top: 50%;
+                left: 50%;
+            }
+            50%{
+                top: 50%;
+                left: 50%;
+            }
+            62.5%{
+                top: 50%;
+                left: 0%;
+            }
+            75%{
+                top: 50%;
+                left: 0%;
+            }
+            87.5%{
+                top: 0%;
+                left: 0%;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+
+        span:nth-child(2){
+            animation-delay: 1s;
+        }
+
+        span:nth-child(3){
+            animation-delay: 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

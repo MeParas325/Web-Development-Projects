@@ -1,0 +1,26 @@
+:root{
+    --Paras:blue;
+    --Tanuja:orange;
+}
+
+
+div{
+
+    /* background: yellow; */
+    background: var(--Paras);
+}
+
+h1{
+
+    /* color: red; */
+    color: var(--Tanuja);
+}
+
+h2{
+    color: var(--Tanuja);
+}
+
+h3{
+    --Tanuja:red;
+    color: var(--Tanuja);
+}

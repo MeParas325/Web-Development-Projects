@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+       body{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background-color: rgb(85, 175, 216);
+       }
+
+       .center_div{
+           background-color: rgba(0, 0, 0, 0.8);
+           width: 450px;
+           height: 380px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           border-radius: 10px;
+           padding: 40px;
+       }
+
+       .inputBox{
+           display: flex;
+           flex-direction: column;
+           margin-top: 40px;
+           width: 100%;
+       }
+
+       .inputBox input{
+           background: transparent;
+           outline: none;
+           border: none;
+           border-bottom: 1px solid white;
+           color: white;
+       }
+
+       .inputBox label{
+           color: white;
+       }
+
+       .inputBox input:focus~label{
+           top: -20px;
+           font-size: 10px;
+       }
+
+       .center_div h1{
+           margin-top: -70px;
+           color: white;
+       }
+
+
+       form{
+           position: relative;
+           width: 100%;
+       }
+
+       button{
+           position: absolute;
+           margin-top: 40px;
+           padding: 5px 10px;
+           border-radius: 0.5rem;
+           font-size: 1rem;
+           background-color: rgb(109, 109, 211);
+       }
+
+       button:hover{
+           cursor: pointer;
+           background-color: blue;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="center_div">
+        <h1>Login Form</h1>
+        <form action="">
+            <div class="inputBox">
+              <label>Username</label>
+              <input type="text" autocomplete="off" required>
+            </div>
+            <div class="inputBox">
+              <label>Password</label>
+              <input type="password" autocomplete="off" required>
+            </div>
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+</html>

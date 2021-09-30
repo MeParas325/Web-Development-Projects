@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder effect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(49, 45, 45);
+        }
+
+        li{
+            color: rgb(87, 82, 73);
+            list-style: none;
+            font-size: 7rem;
+            letter-spacing: 10px;
+            font-weight: 500;
+            animation: light 0.3s linear infinite;
+        }
+
+        li:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        li:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        li:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        li:nth-child(4){
+            animation-delay: 0.4s;
+        }
+        li:nth-child(5){
+            animation-delay: 0.5s;
+        }
+        li:nth-child(6){
+            animation-delay: 0.6s;
+        }
+        li:nth-child(7){
+            animation-delay: 0.7s;
+        }
+
+        @keyframes light{
+            0%{
+                color: rgb(73, 70, 65);
+            }
+
+            100%{
+                color: rgb(207, 165, 88);
+            }
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>T</li>
+        <li>H</li>
+        <li>U</li>
+        <li>N</li>
+        <li>D</li>
+        <li>E</li>
+        <li>R</li>
+    </ul>
+</body>
+</html>

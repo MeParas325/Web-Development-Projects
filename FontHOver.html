@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Hover Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Aclonica', sans-serif;
+        }
+
+        :root{
+            --background-color: rgb(227, 227, 253);
+            --black: #020001;
+            --white: #fff;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--background-color);
+        }
+
+        .cen{
+            position: relative;
+            display: flex;
+            justify-content: ;
+        }
+
+        h1{
+            font-size: 12rem;
+            position: absolute;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            cursor: pointer;
+            text-shadow: 0 0.5rem 0.5rem rgba(163, 163, 247, 0.6);
+            transition: all 2s;
+        }
+
+        h1:first-child{
+            color: var(--white);
+        }
+
+        h1:nth-child(2){
+            color: var(--black); 
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            background-color: var(--background-color);
+        } 
+
+        h1:nth-child(2):hover{
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+        } 
+
+        h1:first-child:hover ~ h1{
+            clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0, 0 0);
+        }
+    </style>
+</head>
+<body>
+        <h1>Paras</h1>
+        <h1>Verma</h1>
+</body>
+</html>

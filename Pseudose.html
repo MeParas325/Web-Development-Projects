@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+    <style>
+        *{margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+
+        :root{
+            --b-a-width: 10vw;
+        }
+
+        body{
+            background-color: skyblue;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            text-shadow: 0px 2px 5px black;
+            color: black;
+            text-align: center;
+            position: relative;
+        }
+
+        h1::before{
+            content: "";
+            top: 0%;
+            left: 50%;
+            position: absolute;
+            border-bottom: 5px solid black;
+            width: var(--b-a-width);
+            transform: translateX(-50%);
+
+        }
+        h1::after{
+            content: "";
+            position: absolute;
+            bottom: -23%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: var(--b-a-width);
+            border-bottom: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Paras verma</h1>
+    </div>
+</body>
+</html>
